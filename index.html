@@ -3,49 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praksa Frontend - Dan 2</title>
+    <title>F1 SpeedZone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER: Sadrži logo i navigacione linkove -->
     <header>
         <div class="logo">
-            <h1>MojBrand</h1>
+            <h1>F1 SpeedZone</h1>
         </div>
+
         <nav>
             <ul>
-                <li><a href="#">Početna</a></li>
+                <li><a href="#hero">Početna</a></li>
                 <li><a href="#o-nama">O nama</a></li>
-                <li><a href="#">Utrke</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#utrke">Utrke</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- HERO SEKCIJA: Glavna poruka i uvod -->
+
         <section id="hero">
-            <h2>Dobrodošli u svijet brzine</h2>
-            <p>Istražite najnovije vijesti i tehničke detalje iz svijeta motorsporta.</p>
-            <button>Saznaj više</button>
+            <h2>Dobrodošli u svijet Formule 1</h2>
+            <p>
+                Pratite najnovije vijesti, analize bolida, vozače i tehnologiju
+                koja pokreće najbrži motorsport na svijetu.
+            </p>
+            <button onclick="document.getElementById('o-nama').scrollIntoView({behavior:'smooth'})">
+                Saznaj više
+            </button>
         </section>
 
-        <hr>
-
-        <!-- SEKCIJA O NAMA: Detaljnije informacije -->
         <section id="o-nama">
             <h2>O nama</h2>
-            <p>Mi smo tim entuzijasta koji prati razvoj tehnologije u Formuli 1 i drugim trkačkim serijama. Naš cilj je pružiti najtačnije informacije fanovima širom svijeta.</p>
-            <img src="https://via.placeholder.com/400x200" alt="Tim na poslu">
+            <p>
+                F1 SpeedZone okuplja strastvene fanove motorsporta i pruža
+                detaljne informacije o Formuli 1, timovima, vozačima i
+                tehnološkim inovacijama koje oblikuju budućnost utrkivanja.
+                Naša misija je približiti brzinu, strategiju i adrenalin svakom ljubitelju utrka.
+            </p>
+            <img src="f1_bolid.jpg" alt="Formula 1 bolid">
         </section>
+
+        <section id="utrke">
+            <h2>Najpoznatije utrke</h2>
+            <div class="race-container">
+                <div class="race-card">
+                    <h3>Monaco Grand Prix</h3>
+                    <p>Jedna od najprestižnijih i najzahtjevnijih utrka u kalendaru Formule 1.</p>
+                </div>
+
+                <div class="race-card">
+                    <h3>Silverstone Grand Prix</h3>
+                    <p>Dom britanskog motorsporta i staza bogate historije.</p>
+                </div>
+
+                <div class="race-card">
+                    <h3>Monza Grand Prix</h3>
+                    <p>Poznato kao hram brzine, omiljeno među ljubiteljima velikih brzina.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Email: info@f1speedzone.com</p>
+            <p>Telefon: +387 61 000 000</p>
+            <p>Lokacija: Bihać, Bosna i Hercegovina</p>
+        </section>
+
     </main>
 
-    <!-- FOOTER: Informacije na dnu stranice -->
     <footer>
-        <p>&copy; 2026 Moja Frontend Praksa. Sva prava pridržana.</p>
+        <p>&copy; 2026 F1 SpeedZone. Sva prava pridržana.</p>
         <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
         </ul>
     </footer>
 
