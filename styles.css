@@ -16,39 +16,17 @@ html {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-bottom: 2px solid #e10600;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    display: none; 
 }
 
-.logo h1 {
-    color: #e10600;
-    font-size: 2rem;
+.navbar {
+    border-bottom: 2px solid #e10600;
+}
+
+.navbar-brand {
+    color: #e10600 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #e10600;
 }
 
 main {
@@ -71,6 +49,7 @@ section {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
                 url('f1_bolid.jpg') center/cover no-repeat;
     border-radius: 0 0 20px 20px;
+    max-width: 100%;
 }
 
 #hero h2 {
@@ -106,7 +85,8 @@ section {
 
 #o-nama,
 #kontakt,
-#utrke {
+#utrke,
+#vozaci {
     background-color: #ffffff;
     color: #222;
     margin-top: 40px;
@@ -117,17 +97,11 @@ section {
 
 #o-nama h2,
 #utrke h2,
-#kontakt h2 {
+#kontakt h2,
+#vozaci h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #e10600;
-}
-
-#o-nama p,
-#kontakt p {
-    max-width: 850px;
-    margin: 0 auto 20px;
-    font-size: 1.1rem;
 }
 
 #o-nama img {
@@ -136,11 +110,6 @@ section {
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-#utrke {
-    text-align: center;
-    padding-top: 60px;
 }
 
 .race-container {
@@ -169,8 +138,22 @@ section {
     font-size: 1.4rem;
 }
 
-.race-card p {
-    font-size: 1rem;
+#vozaci-lista .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    background-color: #333;
+}
+
+#vozaci-lista .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+#vozaci-lista .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(225, 6, 0, 0.2);
 }
 
 footer {
@@ -181,16 +164,12 @@ footer {
     border-top: 2px solid #e10600;
 }
 
-footer p {
-    margin-bottom: 15px;
-    color: #cccccc;
-}
-
 footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0;
 }
 
 footer ul li a {
@@ -204,28 +183,6 @@ footer ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #hero h2 {
-        font-size: 2.5rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
-    }
-
-    #o-nama h2,
-    #utrke h2,
-    #kontakt h2 {
-        font-size: 2rem;
-    }
+    #hero h2 { font-size: 2.5rem; }
+    #o-nama h2, #utrke h2, #kontakt h2, #vozaci h2 { font-size: 2rem; }
 }
