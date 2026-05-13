@@ -27,7 +27,7 @@ const vozaci = [
         tim: "Red Bull Racing",
         titule: 3,
         opis: "Trostruki svjetski šampion poznat po agresivnom stilu i nevjerovatnoj brzini.",
-        slika: "max.jpg"
+        slika: "images/max.jpg"
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const vozaci = [
         tim: "Scuderia Ferrari",
         titule: 7,
         opis: "Statistički najuspješniji vozač u historiji sa 103 pobjede i 7 titula.",
-        slika: "hamilton.jpg"
+        slika: "images/hamilton.jpg"
     },
     {
         id: 3,
@@ -43,7 +43,7 @@ const vozaci = [
         tim: "Scuderia Ferrari",
         titule: 0,
         opis: "Predvodnik Ferrarija i jedan od najboljih vozača u kvalifikacijama na gridu.",
-        slika: "leclerc.jpg"
+        slika: "images/leclerc.jpg"
     }
 ];
 
